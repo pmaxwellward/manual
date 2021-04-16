@@ -1,6 +1,6 @@
 # Key Commands
 
-*In this document, Ctrl should be replaced with Command (⌘) on Mac.*
+*In this document, use Command (⌘) instead of Ctrl on Mac.*
 
 ## Global commands
 

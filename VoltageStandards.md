@@ -7,7 +7,7 @@ Rack attempts to model Eurorack standards as accurately as possible, but this is
 
 ## Levels
 
-Signals should typically be \\(10V_{pp}\\) (peak-to-peak).
+Signals should typically be $10V_{pp}$ (peak-to-peak).
 This means that audio outputs should typically be **±5V** (before bandlimiting is applied), and CV modulation sources should typically be **0 to 10V** (unipolar CV) or **±5V** (bipolar CV).
 
 Absolute decibel measurements (e.g. for VU meters) should be relative to 10V amplitude.
@@ -51,10 +51,10 @@ You can use `dsp::Timer` for keeping track of time.
 ## Pitch and Frequencies
 
 Modules should use the **1V/oct** (volt per octave) standard for CV control of frequency information.
-In this standard, the relationship between frequency \\(f\\) and voltage \\(V\\) is \\(f = f_0 \cdot 2^{V}\\), where \\(f_0\\) is the baseline frequency.
-Your module might have a frequency knob which may offset \\(V\\).
-At its default position, audio-rate oscillators should use a baseline of the note C4 defined by [International Pitch Notation](https://en.wikipedia.org/wiki/Scientific_pitch_notation) ("middle C", MIDI note 60, \\(f_0\\) = 261.6256 Hz = `dsp::FREQ_C4`).
-Low-frequency oscillators and clock generators should use 120 BPM (\\(f_0\\) = 2 Hz).
+In this standard, the relationship between frequency $f$ and voltage $V$ is $f = f_0 \cdot 2^{V}$, where $f_0$ is the baseline frequency.
+Your module might have a frequency knob which may offset $V$.
+At its default position, audio-rate oscillators should use a baseline of the note C4 defined by [International Pitch Notation](https://en.wikipedia.org/wiki/Scientific_pitch_notation) ("middle C", MIDI note 60, $f_0$ = 261.6256 Hz = `dsp::FREQ_C4`).
+Low-frequency oscillators and clock generators should use 120 BPM ($f_0$ = 2 Hz).
 
 ## NaNs and Infinity
 
@@ -66,11 +66,11 @@ If your module supports polyphonic inputs or has polyphonic outputs, then it can
 It is recommended to support up to 16 channels, which is the maximum that Rack allows.
 
 Typically each voice in your module can be abstracted into an "engine".
-The number of active engines \\(N\\) should be defined by the number of channels of the "primary" input (e.g. 1V/oct input for VCOs, audio input for filters, gate input for envelope generators, etc).
-All other secondary inputs with \\(M\\) channels should follow these rules:
-- If monophonic (\\(M = 1\\)), its voltage should be copied to all engines.
-- If polyphonic with enough channels (\\(M \geq N\\)), each channel voltage should be used in its respective engine.
-- If polyphonic but not enough channels (\\(1 < M < N\\)), 0V should be copied to out-of-bounds engines.
+The number of active engines $N$ should be defined by the number of channels of the "primary" input (e.g. 1V/oct input for VCOs, audio input for filters, gate input for envelope generators, etc).
+All other secondary inputs with $M$ channels should follow these rules:
+- If monophonic ($M = 1$), its voltage should be copied to all engines.
+- If polyphonic with enough channels ($M \geq N$), each channel voltage should be used in its respective engine.
+- If polyphonic but not enough channels ($1 < M < N$), 0V should be copied to out-of-bounds engines.
 
 All of this behavior is provided by `Port::getPolyVoltage(c)`.
 

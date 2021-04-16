@@ -4,7 +4,7 @@
 To distinguish them from normal monophonic cables, polyphonic cables appear thicker and can contain any number of channels from 2 to 16.
 
 Without polyphonic cables, patching a polyphonic synth would be very cumbersome, with increasing difficulty the more voices you need to support.
-To allow a maximum of \\(N\\) voices to be played, you would need to create \\(N\\) identical VCOs, VCFs, VCAs, etc. with \\(N\\) sets of cables patched between them and then unity-mix their \\(N\\) outputs into a single signal.
+To allow a maximum of $N$ voices to be played, you would need to create $N$ identical VCOs, VCFs, VCAs, etc. with $N$ sets of cables patched between them and then unity-mix their $N$ outputs into a single signal.
 But with polyphonic cables, you only need to patch one set of modules and then configure a single "source" module to generate a polyphonic output.
 
 ## Example
