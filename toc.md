@@ -3,6 +3,7 @@
 - [Installing](/Installing)
 - [Getting Started](/GettingStarted)
 - [Menu Bar](/MenuBar)
+- [Core](/Core)
 - [Polyphony](/Polyphony)
 - [Key Commands](/KeyCommands)
 - [FAQ](/FAQ)
@@ -22,7 +23,3 @@
 ### Rack Development
 - [Building](/Building)
 - [Version](/Version)
-
-### Hosted Plugin Manuals
-- [VCV Core](/Core)
-- *Your plugin here*

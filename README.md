@@ -18,15 +18,6 @@ Embed images with a relative link:
 You can use HTML in your Markdown if it is absolutely necessary, e.g. to embed a video.
 If you abuse this feature, your maintainer privilege will be removed.
 
-## Hosting your plugin's manual
-
-Fork this repo and add a folder matching your slug.
-Add a single link to your plugin's main page to [toc.md](toc.md).
-Example folder structure:
-- `/Core/index`: Hosted at https://manual.vcvrack.com/Core/
-- `/Core/MIDI-CV`: Hosted at https://manual.vcvrack.com/Core/MIDI-CV
-- `/Core/MIDI-CV.png`: Hosted at https://manual.vcvrack.com/Core/MIDI-CV.png
-
 ## License
 
 All documentation text in this repository is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
