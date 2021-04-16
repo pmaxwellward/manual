@@ -23,7 +23,7 @@ You may wish to add this line to your `~/.bashrc` or other shell environment, so
 The `helper.py` script included in the Rack SDK is an easy way to create a plugin template.
 You can run it with no arguments to show documentation.
 
-Decide on a [slug](Manifest.html#slug) for your plugin.
+Choose a [slug](Manifest.html#slug) for your plugin, a unique string containing letters, numbers, `-`, or `_`.
 We will use `MyPlugin` for this tutorial.
 Run
 ```bash

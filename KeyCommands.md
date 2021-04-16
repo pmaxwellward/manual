@@ -15,6 +15,7 @@ Key commands documented in Rack's [menu bar](MenuBar.html) are not documented he
 - **Ctrl+=**: Zoom in.
 - **Scroll**: Scroll rack vertically.
 - **Shift+scroll**: Scroll rack horizontally.
+- **Ctrl+scroll**: Zoom in/out.
 - **Middle mouse button drag**: Pan rack view.
 - **Arrow keys**: Pan rack view. You can use Ctrl, Shift, or Ctrl+shift to change the speed of scrolling.
 - **Ctrl+V**: Pastes a new module at the cursor position, from the module context menu "Preset > Copy" or Ctrl+C.

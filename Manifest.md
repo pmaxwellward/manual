@@ -179,7 +179,7 @@ The core functionality times two. If multiple channels are a requirement for the
 Expands the functionality of a "mother" module when placed next to it. Expanders should inherit the tags of its mother module.
 
 ### `External`
-
+Interfaces with hardware or software outside VCV Rack such as a MIDI/audio interface, webcam, DAW, robotic dog, etc.
 
 ### `Filter`
 *Deprecated aliases: `VCF`, `Voltage controlled filter`*
@@ -189,7 +189,7 @@ Expands the functionality of a "mother" module when placed next to it. Expanders
 
 
 ### `Function generator`
-
+Generates complex envelopes or cycles via a large selection of general parameters.
 
 ### `Granular`
 
@@ -218,16 +218,17 @@ Implements binary logic with gate signals.
 *Deprecated aliases: `Low pass gate`, `Lowpass gate`*
 
 ### `MIDI`
-
+Generates, processes, or interprets MIDI messages, e.g. for a MIDI interface.
 
 ### `Mixer`
-
+Mixes/sums audio with optional level adjustment, panning, and/or mix buses.
 
 ### `Multiple`
-
+Copies an input directly to multiple outputs.
+While VCV Rack supports stacking cables on output ports, users sometimes prefer organizing their cables with multiples, allowing easy access to each cable.
 
 ### `Noise`
-
+Generates audio-rate or CV-rate random noise.
 
 ### `Oscillator`
 *Deprecated aliases: `VCO`, `Voltage controlled oscillator`*
@@ -239,7 +240,7 @@ Implements binary logic with gate signals.
 
 
 ### `Physical modeling`
-
+Simulates a physical system such as a string, metal bar, vocal chords, chaotic system, celestial bodies, etc.
 
 ### `Polyphonic`
 *Deprecated aliases: `Poly`*

@@ -1,6 +1,6 @@
 # Migrating v1 Plugins to v2
 
-The API of VCV Rack v2 has been designed to be nearly backward-compatible with v1 plugins, so updating your plugin to v2 likely only involves the following step and a recompile.
+The API of VCV Rack v2 has been designed to be nearly backward-compatible with v1 plugins, so updating your plugin to v2 likely only involves a version update and a recompile.
 
 ## Update plugin version to v2
 
@@ -32,7 +32,32 @@ If your plugin compiles successfully, you are ready to test and release.
 Or, you may take advantage of new v2 features below.
 
 
+## Potential bugs
+
+### Avoid keeping `Font` (and `Image`) references across multiple frames
+
+*Rack for DAWs* uses a different OpenGL context each time the plugin editor window is closed and reopened.
+This means that if you load a `Font` in a widget's constructor with `font = APP->window->loadFont(...)`, the OpenGL font reference will be invalid if the window is reopened later.
+
+Instead, save only the font path, and fetch the font each frame in `draw()`. Example:
+```cpp
+std::shared_ptr<Font> font = APP->window->loadFont(fontPath);
+if (font) {
+	nvgFontFaceId(args.vg, font->handle);
+	...
+}
+```
+`loadFont()` caches the font by its path, so this operation can be efficiently called in `draw()` every frame.
+
+*All of the above also applies to `Image` and `loadImage()`.*
+
 ## Optional v2 API features
+
+### SVG load function
+`Window::loadSvg()` has been moved to `Svg::load()`. Search and replace:
+```bash
+perl -i -pe 's/APP->window->loadSvg\b/Svg::load/g' src/*
+```
 
 ### Port labels
 
@@ -44,11 +69,3 @@ TODO
 
 ### TODO
 
-```bash
-perl -i -pe 's/(\w+)_PARAM\b/PARAM_$1/g' src/*
-perl -i -pe 's/(\w+)_BUTTON\b/BUTTON_$1/g' src/*
-perl -i -pe 's/(\w+)_SWITCH\b/SWITCH_$1/g' src/*
-perl -i -pe 's/(\w+)_INPUT\b/INPUT_$1/g' src/*
-perl -i -pe 's/(\w+)_OUTPUT\b/OUTPUT_$1/g' src/*
-perl -i -pe 's/(\w+)_LIGHT\b/LIGHT_$1/g' src/*
-```

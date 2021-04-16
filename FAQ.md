@@ -3,9 +3,9 @@
 <a id="acronym"></a>
 ## What does "VCV" stand for?
 
-There is no official meaning of the name "VCV", but users have suggested "Virtual Control Voltage" or "Voltage Controlled Virtualization".
+There is no official meaning of the name "VCV", but some users have suggested "Virtual Control Voltage" or "Voltage Controlled Virtualization".
 These are good guesses, but "VCV" was chosen simply because it is easy to remember and type.
-"VCV Rack" is the full name of our flagship software product.
+[VCV Rack](https://vcvrack.com/Rack) is the full name of our flagship software product.
 
 
 <a id="userfolder"></a>
