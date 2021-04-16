@@ -2,17 +2,17 @@
 
 The *Core* plugin (built into Rack itself) includes utilities and interfaces for interfacing between the virtual and hardware world.
 
-- [Audio](#audio)
-- [MIDI Interfaces](#midi-interfaces)
-	- [MIDI-CV](#midi-cv)
-	- [MIDI-CC](#midi-cc)
-	- [MIDI-Gate](#midi-gate)
-	- [MIDI-Map](#midi-map)
-	- [CV-MIDI](#cv-midi)
-	- [CV-CC](#cv-cc)
-	- [CV-Gate](#cv-gate)
-- [Blank](#blank)
-- [Notes](#notes)
+- [Audio](#Audio)
+- [MIDI Interfaces](#MIDI-Interfaces)
+	- [MIDI-CV](#MIDI-CV)
+	- [MIDI-CC](#MIDI-CC)
+	- [MIDI-Gate](#MIDI-Gate)
+	- [MIDI-Map](#MIDI-Map)
+	- [CV-MIDI](#CV-MIDI)
+	- [CV-CC](#CV-CC)
+	- [CV-Gate](#CV-Gate)
+- [Blank](#Blank)
+- [Notes](#Notes)
 
 
 ## Audio
