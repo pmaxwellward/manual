@@ -4,6 +4,8 @@ Markdown source repo for https://manual.vcvrack.com/
 
 ## Contributing
 
+If you are an enthusiastic linguist interested in writing high-quality and efficient English for the VCV manual, I am looking for you!
+
 This repo is like a wiki, but you must send a quality pull request to gain direct push access.
 Fork this repo, make a quality improvement, and open a pull request.
 If I accept it, I will add you as a repo maintainer so you can push to `master` directly.
