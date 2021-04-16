@@ -12,7 +12,7 @@ These are good guesses, but "VCV" was chosen simply because it is easy to rememb
 ## Where is the "Rack user folder"?
 
 The Rack user folder stores data readable/writable by Rack.
-You can open it by choosing `Help > Open user folder` in the Rack [menu bar](MenuBar.html), or by navigating to
+You can open it by choosing `Help > Open user folder` in the Rack [menu bar](MenuBar), or by navigating to
 
 - MacOS: `Documents/Rack/`
 - Windows: `My Documents/Rack/`
@@ -59,27 +59,27 @@ If any of these symptoms occur, you can attempt to treat them using the followin
 Note that some tips have trade-offs or might not provide any benefit for your situation.
 
 - Rack DSP:
-	- Use Rack's [CPU meter](MenuBar.html#cpu-meter) to identify high-CPU modules that you could remove or replace.
+	- Use Rack's [CPU meter](MenuBar#cpu-meter) to identify high-CPU modules that you could remove or replace.
 	- Turn off the CPU meter when you don't need it.
 	Measuring the CPU time of each module in your patch consumes significant CPU.
-	- Increase [VCV Audio](Core.html#audio)'s block size to the highest tolerable number.
+	- Increase [VCV Audio](Core#audio)'s block size to the highest tolerable number.
 	This results in proportionally higher audio latency but proportionally decreases block processing overhead and allows higher jitter in sample processing CPU times.
-	- Use the lowest tolerable Engine [sample rate](MenuBar.html#sample-rate).
+	- Use the lowest tolerable Engine [sample rate](MenuBar#sample-rate).
 	Engine CPU usage is almost exactly proportional to its sample rate.
 	- Disable modules in your patch that you aren't currently using by right-clicking on their panels and choosing Disable.
 
 - Rack multi-threading:
 	- To maximize the number of modules in your patch without audio stuttering, increase the number of Rack engine threads until no stuttering occurs.
-	See [Threads](MenuBar.html#threads).
+	See [Threads](MenuBar#threads).
 	- To reduce power usage and temperature, use the smallest number of Rack engine threads that does not cause audio stuttering.
 
 - Graphics:
-	- Decrease Rack's frame rate to the smallest tolerable value. See [Frame rate](MenuBar.html#frame-rate).
+	- Decrease Rack's frame rate to the smallest tolerable value. See [Frame rate](MenuBar#frame-rate).
 	- Use a dedicated (discrete) graphics card, such as Nvidia or AMD.
-	Rack is not designed for integrated graphics such as Intel HD/Iris. See [System Requirements](Installing.html#system-requirements).
+	Rack is not designed for integrated graphics such as Intel HD/Iris. See [System Requirements](Installing#system-requirements).
 	- Make sure your graphics drivers are up-to-date.
 	- If using an Apple Retina display on your Mac, set the Rack app to use [Low Resolution Mode](https://www.maketecheasier.com/launch-apps-low-resolution-mac/).
-	- Use Rack in [fullscreen](MenuBar.html#fullscreen) mode so the graphics card does not need to render the OS user interface and other applications.
+	- Use Rack in [fullscreen](MenuBar#fullscreen) mode so the graphics card does not need to render the OS user interface and other applications.
 
 - Audio hardware:
 	- Use a dedicated audio interface rather than your motherboard's audio hardware.
@@ -103,7 +103,7 @@ Note that some tips have trade-offs or might not provide any benefit for your si
 	This means that any hiccups/stuttering you hear in real-time will not be present when the recording is played back.
 
 - Computer hardware:
-	- Although Rack's [System Requirements](Installing.html#system-requirements) suggest that computers as old as 2013 can run Rack, it is recommended to use a computer from 2016 or later that is designed for gaming.
+	- Although Rack's [System Requirements](Installing#system-requirements) suggest that computers as old as 2013 can run Rack, it is recommended to use a computer from 2016 or later that is designed for gaming.
 	There are many gaming laptop and desktop computers on the market for as low as $300, the price of an average hardware Eurorack module.
 	Unfortunately, Apple's MacBook Air and older MacBook Pro models are not designed for gaming (despite their high price!) and are therefore not recommended for VCV Rack.
 

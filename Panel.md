@@ -25,7 +25,7 @@ Design recommendations from VCV:
 
 
 Do not use other people's intellectual property (IP) without their permission.
-See the [VCV Plugin Ethics Guidelines](PluginLicensing.html#vcv-plugin-ethics-guidelines).
+See the [VCV Plugin Ethics Guidelines](PluginLicensing#vcv-plugin-ethics-guidelines).
 
 Don't hesitate to ask the [VCV Community](https://community.vcvrack.com/c/development) for design help.
 You may find several graphic designers seeking programmers for collaboration.

@@ -4,7 +4,7 @@
 
 ## Global commands
 
-Key commands documented in Rack's [menu bar](MenuBar.html) are not documented here.
+Key commands documented in Rack's [menu bar](MenuBar) are not documented here.
 
 - **Enter** or **right-click on rack**: Launch the Module Browser to add modules to the rack.
 - **F1**: Open Rack manual in your browser.

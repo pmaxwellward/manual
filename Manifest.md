@@ -199,7 +199,7 @@ Generates complex envelopes or cycles via a large selection of general parameter
 
 Clones the functionality, panel design, and component layout of a hardware module on the market.
 
-Remember to follow the [VCV Plugin Ethics Guidelines](PluginLicensing.html#vcv-plugin-ethics-guidelines) and only clone hardware with permission from its owner.
+Remember to follow the [VCV Plugin Ethics Guidelines](PluginLicensing#vcv-plugin-ethics-guidelines) and only clone hardware with permission from its owner.
 
 If there is a [ModularGrid](https://www.modulargrid.net/) page for the hardware module, add the [modularGridUrl](Manifest#modules-modulargridurl) property.
 

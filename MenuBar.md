@@ -92,7 +92,7 @@ Rack must be restarted to load new plugin updates.
 ## Help
 
 ### Manual
-Opens [this manual](QuickStart.html).
+Opens [this manual](QuickStart).
 
 ### Open user folder
-Opens the [Rack user folder](FAQ.html#where-is-the-rack-user-folder) in Windows Explorer, Apple Finder, etc.
+Opens the [Rack user folder](FAQ#where-is-the-rack-user-folder) in Windows Explorer, Apple Finder, etc.

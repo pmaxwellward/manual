@@ -9,7 +9,7 @@ But with polyphonic cables, you only need to patch one set of modules and then c
 
 ## Example
 
-In the screenshot below, [*MIDI-CV*](Core.html#midi-cv) is configured to generate 8 channels by right-clicking on its panel, choosing a number of "Polyphonic channels", and optionally choosing a "Polyphony mode" to specify how MIDI notes are assigned to polyphonic channels.
+In the screenshot below, [*MIDI-CV*](Core#midi-cv) is configured to generate 8 channels by right-clicking on its panel, choosing a number of "Polyphonic channels", and optionally choosing a "Polyphony mode" to specify how MIDI notes are assigned to polyphonic channels.
 Its V/OCT and GATE ports then become polyphonic outputs, and their signals can be sent to other polyphonic modules, carried by polyphonic cables.
 
 ![Polyphonic patch](images/polyphonicpatch.png)

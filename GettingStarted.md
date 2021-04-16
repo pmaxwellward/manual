@@ -2,17 +2,17 @@
 
 VCV Rack is virtual modular synthesizer platform for Windows/Mac/Linux that simulates Eurorack modules, in addition to original modules that go beyond hardware.
 
-Once [VCV Rack](https://vcvrack.com/Rack) is installed and launched for the first time (see [Installing](Installing.html)), you will see a rack with a template patch.
+Once [VCV Rack](https://vcvrack.com/Rack) is installed and launched for the first time (see [Installing](Installing)), you will see a rack with a template patch.
 
 ![Template patch](images/templatepatch.png)
 
-The [*VCV Audio*](Core.html#audio) module is the portal between the virtual and physical world.
+The [*VCV Audio*](Core#audio) module is the portal between the virtual and physical world.
 It sends audio from VCV Rack to your speakers and audio device (e.g. sound card or external audio interface).
 It can also receive audio from microphones and your audio device's inputs.
 
 1\. To set up *VCV Audio*, click its display to set the audio driver, device, and optionally sample rate and block size.
 
-[*VCV MIDI-CV*](Core.html#midi-cv) converts MIDI notes from a MIDI device (such as a keyboard or controller) to virtual voltages in Rack.
+[*VCV MIDI-CV*](Core#midi-cv) converts MIDI notes from a MIDI device (such as a keyboard or controller) to virtual voltages in Rack.
 It can also use your computer's keyboard as a basic MIDI keyboard.
 
 2\. Use the QWERTY and ZXCVB rows of your keyboard to generate MIDI notes, which are converted to 1V/oct and gate signals.
