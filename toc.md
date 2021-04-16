@@ -4,7 +4,6 @@
    - [Installing](/Installing)
    - [Getting Started](/GettingStarted)
    - [Menu Bar](/MenuBar)
-   - [Core](/Core)
    - [Polyphony](/Polyphony)
    - [Key Commands](/KeyCommands)
 
@@ -25,3 +24,7 @@
    - [Issues](/Issues)
    - [Communities](/Communities)
    - [About](/About)
+
+- Plugins
+   - [Core](/Core)
+   - *Your plugin here*
