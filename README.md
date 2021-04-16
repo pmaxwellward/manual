@@ -2,24 +2,6 @@
 
 Markdown source repo for https://manual.vcvrack.com/
 
-## Contributing
-
-If you are an enthusiastic linguist interested in writing high-quality and efficient English for the VCV manual, I am looking for you!
-
-This repo is like a wiki, but you must send a quality pull request to gain direct push access.
-Fork this repo, make a quality improvement, and open a pull request.
-If I accept it, I will add you as a repo maintainer so you can push to `master` directly.
-manual.vcvrack.com is updated immediately after `master` is updated.
-
-You can add images to the manual if they are necessary for your article.
-Embed images with a relative link:
-```md
-![alt text](my-image.png)
-```
-
-You can use HTML in your Markdown if it is absolutely necessary, e.g. to embed a video.
-If you abuse this feature, your maintainer privilege will be removed.
-
 ## License
 
 All documentation text in this repository is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
