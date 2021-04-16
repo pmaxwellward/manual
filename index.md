@@ -1,1 +1,4 @@
-[VCV Rack](https://vcvrack.com/) is an open-source modular synthesizer for Windows/Mac/Linux that simulates Eurorack modules.
+This is the manual for [VCV Rack](https://vcvrack.com/), the open-source Eurorack modular synthesizer simulator for Windows/Mac/Linux.
+
+For the manual of a specific module, find it on the [VCV Library](https://library.vcvrack.com/) and click the "User manual" link.
+Or, right-click the module in VCV Rack and choose "Plugin > Manual".
