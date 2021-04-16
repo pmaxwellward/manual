@@ -115,7 +115,7 @@ Then add the following code to the `process()` function, which is called every a
 		// Compute the sine output
 		float sine = std::sin(2.f * M_PI * phase);
 		// Audio signals are typically +/-5V
-		// https://vcvrack.com/manual/VoltageStandards.html
+		// https://manual.vcvrack.com/VoltageStandards
 		outputs[SINE_OUTPUT].setVoltage(5.f * sine);
 
 		// Blink light at 1Hz
@@ -128,7 +128,7 @@ Then add the following code to the `process()` function, which is called every a
 Compile your plugin with `make`.
 If the build succeeds, you can generate a distributable plugin package with `make dist`, which places it in `dist/`.
 
-You can automatically install the plugin package to your [Rack user folder](https://vcvrack.com/manual/FAQ#where-is-the-rack-user-folder) with `make install`.
+You can automatically install the plugin package to your [Rack user folder](manual/FAQ#where-is-the-rack-user-folder) with `make install`.
 You should now be able to test your plugin by opening Rack and choosing your module in the Module Browser.
 
 If you don't see your plugin in Rack's Module Browser, check the `log.txt` file in your Rack user folder.

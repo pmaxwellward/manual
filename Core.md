@@ -32,7 +32,7 @@ The **TO DEVICE** section sends Rack signals to a hardware audio device for play
 After a driver is selected, a particular **device** can be chosen for the driver.
 
 The **sample rate** is the number of audio samples per second for the audio device to process.
-Note that this rate is different than Rack's [engine sample rate](https://vcvrack.com/manual/MenuBar#sample-rate), which determines the number of samples per second for Rack modules to process.
+Note that this rate is different than Rack's [engine sample rate](MenuBar#sample-rate), which determines the number of samples per second for Rack modules to process.
 If set to different rates, sample rate conversion will occur, resulting in slightly higher CPU usage, slightly less audio fidelity, and slightly more latency.
 
 The **block size** sets the number of samples to store in the audio buffer before releasing to the audio device.
