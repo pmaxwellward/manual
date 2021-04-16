@@ -13,7 +13,7 @@ There are many online resources and books for learning DSP.
 	- [Spectral Audio Signal Processing](https://ccrma.stanford.edu/~jos/sasp/)
 - [Seeing Circles, Sines, and Signals](https://jackschaedler.github.io/circles-sines-signals/): A visual and interactive introduction to DSP.
 - [The Scientist and Engineer's Guide to Digital Signal Processing](http://dspguide.com/) by Steven W. Smith: Free online book covering general DSP topics.
-- [The Art of VA Filter Design](http://www.native-instruments.com/fileadmin/ni_media/downloads/pdf/VAFilterDesign_2.0.0a.pdf) (PDF) by Vadim Zavalishin: Huge collection of deep topics in digital/analog filter design and analog filter modeling.
+- [The Art of VA Filter Design](https://www.native-instruments.com/fileadmin/ni_media/downloads/pdf/VAFilterDesign_2.1.2.pdf) (PDF) by Vadim Zavalishin: Huge collection of deep topics in digital/analog filter design and analog filter modeling.
 - [DSPRelated.com](https://www.dsprelated.com/): Articles, news, and blogs about basic and modern DSP topics.
 - [Digital Signal Processing MIT OpenCourseWare](https://ocw.mit.edu/resources/res-6-008-digital-signal-processing-spring-2011/): Video lectures and notes covering the basics of DSP.
 - [KVR Audio Forum - DSP and Plug-in Development](http://www.kvraudio.com/forum/viewforum.php?f=33): Music DSP and software development discussions.
