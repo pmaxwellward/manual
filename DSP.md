@@ -1,4 +1,4 @@
-# DSP
+# Digital Signal Processing
 
 Digital signal processing (DSP) is the field of mathematics and programming regarding the discretization of continuous signals in time and space.
 One of its many applications is to generate and process audio from virtual/digital modular synthesizers.

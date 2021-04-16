@@ -13,8 +13,8 @@
    - [Panel](/Panel)
    - [Manifest](/Manifest)
    - [Voltage Standards](/VoltageStandards)
-   - [DSP](/DSP)
-   - [Migrate v1](/Migrate1)
+   - [Digital Signal Processing](/DSP)
+   - [Migrating v0.6 Plugins to v1](/Migrate1)
    - [Plugin Licensing](/PluginLicensing)
 
 - Rack Development

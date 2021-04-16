@@ -1,31 +1,35 @@
-# VCV Rack Manual
+# VCV Manual
 
-The scope of the manual is the VCV Rack application. It does not include individual plugins for Rack---those should be documented and hosted by the plugin developer.
+Markdown source repo for https://manual.vcvrack.com/
 
-## Contributions
+## Contributing
 
-Send a pull request to this repository with your edits.
-Major changes like new pages and complete overhauls are welcome, as well as minor fixes like grammar, spelling, and reorganization.
-Your PR will be accepted if it is a net positive benefit to readers.
+This repo is like a wiki, but you must send a quality pull request to gain direct push access.
+Fork this repo, make a quality improvement, and open a pull request.
+If I accept it, I will add you as a repo maintainer so you can push to `master` directly.
+manual.vcvrack.com is updated immediately after `master` is updated.
 
-## Building
+You can add images to the manual if they are necessary for your article.
+Embed images with a relative link:
+```md
+![alt text](my-image.png)
+```
 
-Install [Sphinx](http://www.sphinx-doc.org/en/stable/) and the [readthedocs theme](https://github.com/readthedocs/sphinx_rtd_theme).
+You can use HTML in your Markdown if it is absolutely necessary, e.g. to embed a video.
+If you abuse this feature, your maintainer privilege will be removed.
 
-	pip install sphinx sphinx_rtd_theme
+## Hosting your plugin's manual
 
-Install [recommonmark](https://github.com/rtfd/recommonmark).
-
-	pip install recommonmark
-
-Build with
-
-	make html
-
-The output should be generated in `_build/html`.
+Fork this repo and add a folder matching your slug.
+Add a single link to your plugin's main page to [toc.md](toc.md).
+Example folder structure:
+- `/Core/index`: Hosted at https://manual.vcvrack.com/Core/
+- `/Core/MIDI-CV`: Hosted at https://manual.vcvrack.com/Core/MIDI-CV
+- `/Core/MIDI-CV.png`: Hosted at https://manual.vcvrack.com/Core/MIDI-CV.png
 
 ## License
 
 All documentation text in this repository is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Contributers agree to license their text contributions under this license.
 
 Images such as screenshots and logos are licensed by their respective owner.
