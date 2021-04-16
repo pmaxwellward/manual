@@ -114,9 +114,7 @@ This is useful for setting the amplitude of percussive sounds for MIDI controlle
 ### MIDI-Map
 <img class="module-screenshot" src="https://vcvrack.com/screenshots/Core/MIDI-Map.png">
 
-MIDI-Map allows the user to map MIDI CC (Continuous Controller) messages from 0 to 127 to the variable inputs of other modules, such as knobs and sliders.
-
-To map a MIDI-CC to specific knob or slider, click "Unmapped" in the MIDI-MAP module to begin mapping a MIDI input. Once in mapping mode, manipulate the MIDI-CC device (e.g., hardware knob on your MIDI controller). The label will update immediately to reflect the MIDI-CC control identifier (e.g., CC01). Click on the newly mapped MIDI-CC input, then click on the knob you would like to use it to control. The label will change one final time to indicate the input ID *and* associated module input (e.g., CC16 VCO-1 Frequency).  
+TODO
 
 ### CV-MIDI
 <img class="module-screenshot" src="https://vcvrack.com/screenshots/Core/CV-MIDI.png">
