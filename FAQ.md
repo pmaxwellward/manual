@@ -1,4 +1,4 @@
-# FAQ
+# Frequently Asked Questions
 
 <a id="acronym"></a>
 ## What does "VCV" stand for?

@@ -1,9 +1,9 @@
 
-### VCV Rack
-- [Installing](/Installing)
+### Rack
+- [Installing & Running](/Installing)
 - [Getting Started](/GettingStarted)
 - [Menu Bar](/MenuBar)
-- [Core](/Core)
+- [Core Modules](/Core)
 - [Polyphony](/Polyphony)
 - [Key Commands](/KeyCommands)
 - [FAQ](/FAQ)
@@ -13,8 +13,8 @@
 
 ### Plugin Development
 - [Plugin Development Tutorial](/PluginDevelopmentTutorial)
-- [Panel](/Panel)
-- [Manifest](/Manifest)
+- [Panel Guide](/Panel)
+- [Plugin Manifest](/Manifest)
 - [Voltage Standards](/VoltageStandards)
 - [Digital Signal Processing](/DSP)
 - [Migrating v0.6 Plugins to v1](/Migrate1)
@@ -22,4 +22,4 @@
 
 ### Rack Development
 - [Building](/Building)
-- [Version](/Version)
+- [Versioning](/Version)
