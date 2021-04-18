@@ -57,7 +57,7 @@ However, this is an good opportunity to check that your build environment is set
 
 For each module you wish to create, follow the [Panel Guide](Panel) to design an SVG panel graphic.
 
-For this tutorial, we will create a module with the slug `MyModule` and panel file [MyModule.svg](_static/MyModule.svg).
+For this tutorial, we will create a module with the slug `MyModule` and panel file [MyModule.svg](images/MyModule.svg).
 Save this file to `res/` and run
 ```bash
 <Rack SDK folder>/helper.py createmodule MyModule res/MyModule.svg src/MyModule.cpp
