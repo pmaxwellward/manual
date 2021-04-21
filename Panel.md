@@ -2,10 +2,10 @@
 
 ## Setup
 
-Install [Inkscape](https://inkscape.org/), a cross-platform open-source vector graphics editor, to create panels for Rack modules in the open [Scalable Vector Graphics (SVG)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) format.
+Install [Inkscape](https://inkscape.org/), a cross-platform open-source vector graphics editor, to create panels for Rack modules in the [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) format.
 
 - Create a new document.
-- Open the "Document Properties" panel (Shift+Ctrl+D), and make sure "Units" and "Display units" are set to "mm" ("px" is not supported).
+- Open the "Document Properties" panel (Shift+Ctrl+D), and make sure "Units" and "Display units" are set to "mm". "px" is not supported.
 - Set the height to 128.5 mm and the width to a desired multiple of 5.08 mm ([1 HP](http://www.doepfer.de/a100_man/a100m_e.htm) in Eurorack).
 
 ## Designing your panel
@@ -15,7 +15,6 @@ Design the panel, or open an existing .pdf, .ai, .svg, etc file and copy-paste t
 ![](images/VCO.png)
 
 Design recommendations from VCV:
-- Avoid gradients and photorealism. Use a flat style for panels and components. This increases clarity at all zoom levels, which is important when several other modules are on-screen.
 - Design panels as if you are designing hardware.
 	- Make sure there is enough space between knobs and ports to put your thumbs between them.
 	- Use an inverted background for output ports (see Fundamental VCO-1 panel above).
@@ -32,11 +31,11 @@ You may find several graphic designers seeking programmers for collaboration.
 
 ## SVG limitations
 
-The [SVG standard](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) is so broad, no renderer fully supports the entire format.
+The [SVG standard](https://www.w3.org/TR/SVG2/) is extremely broad, and very few (or no) renderers support the entire standard.
 Rack's SVG renderer does not support the following features.
-- **Text and fonts.** All text objects must be converted to paths. This can be achieved in Inkscape with *Path > Object to Path*. As a benefit, this avoids license issues with embedding proprietary fonts.
-- **Gradients.** Simple two-color linear gradients may work, but more advanced features are not a priority since VCV recommends to avoid gradients altogether.
-- **CSS.** Although, most `fill-*` and `stroke-*` properties are supported in inline style attributes.
+- **Text and fonts**: All text objects must be converted to paths. This can be achieved in Inkscape with *Path > Object to Path*. As a benefit, this avoids license issues with embedding proprietary fonts.
+- **Complex gradients**: Simple two-color linear gradients may work.
+- **CSS**: Although, most `fill-*` and `stroke-*` properties are supported in inline style attributes.
 
 ## Adding components
 

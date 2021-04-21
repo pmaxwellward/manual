@@ -1,15 +1,12 @@
+## [VCV Manual](/)
 
 ### Rack
 - [Installing & Running](/Installing)
 - [Getting Started](/GettingStarted)
 - [Menu Bar](/MenuBar)
+- [Key Commands](/KeyCommands)
 - [Core Modules](/Core)
 - [Polyphony](/Polyphony)
-- [Key Commands](/KeyCommands)
-- [FAQ](/FAQ)
-- [Bugs and Features](/Issues)
-- [Communities](/Communities)
-- [About VCV](/About)
 
 ### Plugin Development
 - [Plugin Development Tutorial](/PluginDevelopmentTutorial)
@@ -23,3 +20,9 @@
 ### Rack Development
 - [Building](/Building)
 - [Versioning](/Version)
+
+### Appendix
+- [FAQ](/FAQ)
+- [Bugs and Features](/Issues)
+- [Communities](/Communities)
+- [About VCV](/About)
