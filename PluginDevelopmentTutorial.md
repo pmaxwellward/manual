@@ -115,7 +115,7 @@ Then add the following code to the `process()` function, which is called every a
 		// Compute the sine output
 		float sine = std::sin(2.f * M_PI * phase);
 		// Audio signals are typically +/-5V
-		// https://manual.vcvrack.com/VoltageStandards
+		// https://vcvrack.com/manual/VoltageStandards
 		outputs[SINE_OUTPUT].setVoltage(5.f * sine);
 
 		// Blink light at 1Hz

@@ -1,6 +1,6 @@
 # VCV Manual
 
-Markdown source repo for https://manual.vcvrack.com/
+Markdown source repo for https://vcvrack.com/manual/
 
 ## License
 
