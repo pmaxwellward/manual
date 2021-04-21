@@ -34,12 +34,12 @@ Or, you may take advantage of new v2 features below.
 
 ## Potential bugs
 
-### Avoid keeping `Font` (and `Image`) references across multiple frames
+### Avoid keeping `Font` and `Image` references across multiple frames
 
 *Rack for DAWs* uses a different OpenGL context each time the plugin editor window is closed and reopened.
-This means that if you load a `Font` in a widget's constructor with `font = APP->window->loadFont(...)`, the OpenGL font reference will be invalid if the window is reopened later.
+This means that if you load a `Font` or `Image` in a widget's constructor with `font = APP->window->loadFont(...)` or `image = APP->window->loadImage(...)`, its OpenGL reference will be invalid if the window is reopened later.
 
-Instead, save only the font path, and fetch the font each frame in `draw()`. Example:
+Instead, save only its path, and fetch the font/image each frame in `draw()`. Example:
 ```cpp
 std::shared_ptr<Font> font = APP->window->loadFont(fontPath);
 if (font) {
@@ -47,9 +47,7 @@ if (font) {
 	...
 }
 ```
-`loadFont()` caches the font by its path, so this operation can be efficiently called in `draw()` every frame.
-
-*All of the above also applies to `Image` and `loadImage()`.*
+`loadFont()` and `loadImage()` caches the font/image by its path, so this operation can be efficiently called in `draw()` every frame.
 
 ## Optional v2 API features
 
