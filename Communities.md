@@ -17,7 +17,7 @@
 
 - [Discord](https://discord.gg/wxa89Mh)
 - [Reddit](https://www.reddit.com/r/vcvrack/)
-- [Facebook developer group](https://www.facebook.com/groups/2035785263299933/)
+- [Facebook developer group](https://www.facebook.com/groups/2035785263299933/) (closed, moved to [VCV Community - Development board](https://community.vcvrack.com/c/development/8))
 - [Patchstorage](https://patchstorage.com/platform/vcv-rack/)
 - [MuffWiggler thread](https://www.muffwiggler.com/forum/viewtopic.php?t=186899)
 - [KVR Audio thread](https://www.kvraudio.com/forum/viewtopic.php?f=23&t=489230)
