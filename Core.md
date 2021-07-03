@@ -3,11 +3,12 @@
 The *Core* plugin (built into Rack itself) includes utilities and interfaces for interfacing between the virtual and hardware world.
 
 - [Audio](#Audio)
-- [MIDI Interfaces](#MIDI-Interfaces)
+- [MIDI input modules](#MIDI-input-modules)
 	- [MIDI-CV](#MIDI-CV)
 	- [MIDI-CC](#MIDI-CC)
 	- [MIDI-Gate](#MIDI-Gate)
 	- [MIDI-Map](#MIDI-Map)
+- [MIDI output modules](#MIDI-output-modules)
 	- [CV-MIDI](#CV-MIDI)
 	- [CV-CC](#CV-CC)
 	- [CV-Gate](#CV-Gate)
@@ -16,8 +17,8 @@ The *Core* plugin (built into Rack itself) includes utilities and interfaces for
 
 
 ## Audio
-<img class="module-screenshot" src="https://vcvrack.com/screenshots/Core/AudioInterface.png">
-<img class="module-screenshot" src="https://vcvrack.com/screenshots/Core/AudioInterface16.png">
+[![](https://library.vcvrack.com/screenshots/Core/AudioInterface.m.png)](https://library.vcvrack.com/Core/AudioInterface)
+[![](https://library.vcvrack.com/screenshots/Core/AudioInterface16.m.png)](https://library.vcvrack.com/Core/AudioInterface16)
 
 The *Audio* module merges the virtual Rack world with the physical hardware world.
 The **TO DEVICE** section sends Rack signals to a hardware audio device for playback, and the **FROM DEVICE** section receives hardware signals into Rack.
@@ -43,10 +44,9 @@ Note: Using multiple Audio modules is experimental and may crash Rack or render 
 Most DAWs avoid this feature entirely by restricting audio to a single input and a single output device for stability reasons, but if using multiple audio devices in Rack works with your configuration, more power to you!
 
 
-<a id="MIDI"></a>
-## MIDI Interfaces
+## MIDI input modules
 
-Each MIDI interface module (described below) supports the following drivers.
+Each MIDI input module (described below) supports the following drivers.
 - [Core MIDI](https://developer.apple.com/documentation/coremidi?language=objc) on MacOS
 - [Windows MIDI](https://docs.microsoft.com/en-us/windows/desktop/Multimedia/midi-functions) on Windows
 - [ALSA](http://alsa-project.org/main/index.php/Main_Page) on Linux
@@ -67,7 +67,7 @@ The following is the layout for the QWERTY (US) keyboard.
 
 
 ### MIDI-CV
-<img class="module-screenshot" src="https://vcvrack.com/screenshots/Core/MIDIToCVInterface.png">
+[![](https://library.vcvrack.com/screenshots/Core/MIDIToCVInterface.m.png)](https://library.vcvrack.com/Core/MIDIToCVInterface)
 
 - **V/OCT** generates a 1V/oct pitch signal of the last held MIDI note.
 - **GATE** generates 10V when a key is held. It does not retrigger when notes are played legato.
@@ -90,7 +90,7 @@ Multiple MIDI interfaces may be used simultaneously with the same driver, for ex
 
 
 ### MIDI-CC
-<img class="module-screenshot" src="https://vcvrack.com/screenshots/Core/MIDICCToCVInterface.png">
+[![](https://library.vcvrack.com/screenshots/Core/MIDICCToCVInterface.m.png)](https://library.vcvrack.com/Core/MIDICCToCVInterface)
 
 Each output maps a MIDI CC (Continuous Controller) messages from 0 to 127 to a CV signal from 0V to 10V.
 Some drivers like the gamepad driver generate nonstandard MIDI values from -128 to 127, which is mapped from -10V to 10V.
@@ -102,7 +102,7 @@ Either type a number or move a controller to set the CC number.
 
 
 ### MIDI-Gate
-<img class="module-screenshot" src="https://vcvrack.com/screenshots/Core/MIDITriggerToCVInterface.png">
+[![](https://library.vcvrack.com/screenshots/Core/MIDITriggerToCVInterface.m.png)](https://library.vcvrack.com/Core/MIDITriggerToCVInterface)
 
 MIDI-Gate is similar to MIDI-CC, except that it generates 10V gate signals when a particular note is held.
 For MIDI sequencers and drum machines that send immediate note ON/OFF messages in sequence, a 1 ms trigger is produced.
@@ -112,34 +112,57 @@ This is useful for setting the amplitude of percussive sounds for MIDI controlle
 
 
 ### MIDI-Map
-<img class="module-screenshot" src="https://vcvrack.com/screenshots/Core/MIDI-Map.png">
+[![](https://library.vcvrack.com/screenshots/Core/MIDI-Map.m.png)](https://library.vcvrack.com/Core/MIDI-Map)
 
-TODO
+Controls parameters of other Rack modules via a hardware MIDI CC controller.
+
+To map a hardware control to a Rack parameter, click an "Unmapped" slot in MIDI-Map's display.
+Its text will change to "Mapping...".
+Click a parameter (knob, slider, button, etc) of another module in Rack.
+Then wiggle a knob/slider or press a CC button on your MIDI controller.
+(These steps may be done in either order.)
+The parameter is now mapped and will be moved when you use your MIDI controller.
+
+
+## MIDI output modules
+
+The following modules send MIDI messages to external hardware such as desktop synthesizers, Eurorack modules, and drum machines.
+
 
 ### CV-MIDI
-<img class="module-screenshot" src="https://vcvrack.com/screenshots/Core/CV-MIDI.png">
+[![](https://library.vcvrack.com/screenshots/Core/CV-MIDI.m.png)](https://library.vcvrack.com/Core/CV-MIDI)
 
-TODO
+Converts CV in Rack to MIDI for external hardware.
+
+Useful for performing hardware synthesizers with Rack.
+
 
 ### CV-CC
-<img class="module-screenshot" src="https://vcvrack.com/screenshots/Core/CV-CC.png">
+[![](https://library.vcvrack.com/screenshots/Core/CV-CC.m.png)](https://library.vcvrack.com/Core/CV-CC)
 
-TODO
+Converts CV in Rack to MIDI CC (Continuous Controller) commands for external hardware.
+
+Useful for controlling parameters of hardware synthesizers with Rack.
+
 
 ### CV-Gate
-<img class="module-screenshot" src="https://vcvrack.com/screenshots/Core/CV-Gate.png">
+[![](https://library.vcvrack.com/screenshots/Core/CV-Gate.m.png)](https://library.vcvrack.com/Core/CV-Gate)
 
-TODO
+Converts gates in Rack to MIDI note on/off commands for external hardware.
+
+Useful for performing hardware drum machines with Rack.
+
 
 ## Blank
-<img class="module-screenshot" src="https://vcvrack.com/screenshots/Core/Blank.png">
+[![](https://library.vcvrack.com/screenshots/Core/Blank.m.png)](https://library.vcvrack.com/Core/Blank)
 
 Useful for adding space between modules in your rack.
+
 You can resize the panel by dragging the edges horizontally, with a minimum size of 3HP.
 
 
 ## Notes
-<img class="module-screenshot" src="https://vcvrack.com/screenshots/Core/Notes.png">
+[![](https://library.vcvrack.com/screenshots/Core/Notes.m.png)](https://library.vcvrack.com/Core/Notes)
 
 Useful for adding patch notes, section titles for organization, instructions, and author information to your patches.
 You can copy and paste text with Ctrl+C and Ctrl+V.
