@@ -121,81 +121,81 @@ The human-readable name for the module.
 List of tags representing the functions and/or properties of the module.
 All tags must match the following strings, case-insensitive.
 
-##### `Arpeggiator`
+##### "Arpeggiator"
 Breaks a chord into a sequence of single notes.
 
-##### `Attenuator`
+##### "Attenuator"
 With a level knob and not much else.
 
-##### `Blank`
+##### "Blank"
 No parameters or ports. Serves no purpose except visual.
 
-##### `Chorus`
+##### "Chorus"
 
 
-##### `Clock generator`
-*Deprecated aliases: `Clock`*
+##### "Clock generator"
+*Deprecated aliases: "Clock"*
 
-##### `Clock modulator`
+##### "Clock modulator"
 Clock dividers, multipliers, etc.
 
-##### `Compressor`
+##### "Compressor"
 With threshold, ratio, knee, etc parameters.
 
-##### `Controller`
+##### "Controller"
 Use only if the artist "performs" with this module. Simply having knobs is not enough. Examples: on-screen keyboard, XY pad.
 
-##### `Delay`
+##### "Delay"
 
 
-##### `Digital`
+##### "Digital"
 
 
-##### `Distortion`
+##### "Distortion"
 
 
-##### `Drum`
-*Deprecated aliases: `Drums`, `Percussion`*
+##### "Drum"
+*Deprecated aliases: "Drums", "Percussion"*
 
-##### `Dual`
+##### "Dual"
 The core functionality times two. If multiple channels are a requirement for the module to exist (ring modulator, mixer, etc), it is not a Dual module.
 
-##### `Dynamics`
+##### "Dynamics"
 
 
-##### `Effect`
+##### "Effect"
 
 
-##### `Envelope follower`
+##### "Envelope follower"
 
 
-##### `Envelope generator`
+##### "Envelope generator"
 
 
-##### `Equalizer`
-*Deprecated aliases: `EQ`*
+##### "Equalizer"
+*Deprecated aliases: "EQ"*
 
-##### `Expander`
+##### "Expander"
 Expands the functionality of a "mother" module when placed next to it. Expanders should inherit the tags of its mother module.
 
-##### `External`
+##### "External"
 Interfaces with hardware or software outside VCV Rack such as a MIDI/audio interface, webcam, DAW, robotic dog, etc.
 
-##### `Filter`
-*Deprecated aliases: `VCF`, `Voltage controlled filter`*
+##### "Filter"
+*Deprecated aliases: "VCF", "Voltage controlled filter"*
 
 
-##### `Flanger`
+##### "Flanger"
 
 
-##### `Function generator`
+##### "Function generator"
 Generates complex envelopes or cycles via a large selection of general parameters.
 
-##### `Granular`
+##### "Granular"
 
 
-##### `Hardware clone`
-*Deprecated aliases: `Hardware`*
+##### "Hardware clone"
+*Deprecated aliases: "Hardware"*
 
 Clones the functionality, panel design, and component layout of a hardware module on the market.
 
@@ -203,103 +203,103 @@ Remember to follow the [VCV Plugin Ethics Guidelines](PluginLicensing#vcv-plugin
 
 If there is a [ModularGrid](https://www.modulargrid.net/) page for the hardware module, add the [modularGridUrl](Manifest#modules-modulargridurl) property.
 
-If the module name does not include the hardware's name or brand, add that information to the [module description](Manifest#modules-description) so users can search for the module by its hardware name, e.g. `"Based on Mutable Instruments Clouds"`.
+If the module name does not include the hardware's name or brand, add that information to the [module description](Manifest#modules-description) so users can search for the module by its hardware name, e.g. "Based on Mutable Instruments Clouds".
 
-##### `Limiter`
+##### "Limiter"
 Limits a signal from exceeding a threshold, e.g. with soft clipping or dynamic range compression.
 
-##### `Logic`
+##### "Logic"
 Implements binary logic with gate signals.
 
-##### `Low-frequency oscillator`
-*Deprecated aliases: `LFO`, `Low frequency oscillator`*
+##### "Low-frequency oscillator"
+*Deprecated aliases: "LFO", "Low frequency oscillator"*
 
-##### `Low-pass gate`
-*Deprecated aliases: `Low pass gate`, `Lowpass gate`*
+##### "Low-pass gate"
+*Deprecated aliases: "Low pass gate", "Lowpass gate"*
 
-##### `MIDI`
+##### "MIDI"
 Generates, processes, or interprets MIDI messages, e.g. for a MIDI interface.
 
-##### `Mixer`
+##### "Mixer"
 Mixes/sums audio with optional level adjustment, panning, and/or mix buses.
 
-##### `Multiple`
+##### "Multiple"
 Copies an input directly to multiple outputs.
 While VCV Rack supports stacking cables on output ports, users sometimes prefer organizing their cables with multiples, allowing easy access to each cable.
 
-##### `Noise`
+##### "Noise"
 Generates audio-rate or CV-rate random noise.
 
-##### `Oscillator`
-*Deprecated aliases: `VCO`, `Voltage controlled oscillator`*
+##### "Oscillator"
+*Deprecated aliases: "VCO", "Voltage controlled oscillator"*
 
-##### `Panning`
-*Deprecated aliases: `Pan`*
+##### "Panning"
+*Deprecated aliases: "Pan"*
 
-##### `Phaser`
+##### "Phaser"
 
 
-##### `Physical modeling`
+##### "Physical modeling"
 Simulates a physical system such as a string, metal bar, vocal chords, chaotic system, celestial bodies, etc.
 
-##### `Polyphonic`
-*Deprecated aliases: `Poly`*
+##### "Polyphonic"
+*Deprecated aliases: "Poly"*
 
-##### `Quad`
+##### "Quad"
 The core functionality times four. If multiple channels are a requirement for the module to exist (ring modulator, mixer, etc), it is not a Quad module.
 
-##### `Quantizer`
+##### "Quantizer"
 
 
-##### `Random`
+##### "Random"
 
 
-##### `Recording`
+##### "Recording"
 
 
-##### `Reverb`
+##### "Reverb"
 
 
-##### `Ring modulator`
+##### "Ring modulator"
 
 
-##### `Sample and hold`
-*Deprecated aliases: `S&H`, `Sample & hold`*
+##### "Sample and hold"
+*Deprecated aliases: "S&H", "Sample & hold"*
 
-##### `Sampler`
-
-
-##### `Sequencer`
+##### "Sampler"
 
 
-##### `Slew limiter`
+##### "Sequencer"
 
 
-##### `Speech`
+##### "Slew limiter"
 
 
-##### `Switch`
+##### "Speech"
 
 
-##### `Synth voice`
+##### "Switch"
+
+
+##### "Synth voice"
 A synth voice must have, at the minimum, a built-in oscillator and envelope.
 
-##### `Tuner`
+##### "Tuner"
 
 
-##### `Utility`
+##### "Utility"
 Serves only extremely basic functions, like inverting, max, min, multiplying by 2, etc.
 
-##### `Visual`
+##### "Visual"
 
 
-##### `Vocoder`
+##### "Vocoder"
 
 
-##### `Voltage-controlled amplifier`
-*Deprecated aliases: `Amplifier`, `VCA`, `Voltage controlled amplifier`*
+##### "Voltage-controlled amplifier"
+*Deprecated aliases: "Amplifier", "VCA", "Voltage controlled amplifier"*
 
-##### `Waveshaper`
+##### "Waveshaper"
 
 
 ## `.modules[].description`
