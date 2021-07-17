@@ -6,7 +6,6 @@
 - [GitHub issue tracker](https://github.com/VCVRack/Rack/issues)
 - [Facebook page](https://www.facebook.com/vcvrack/)
 - [Twitter](https://twitter.com/vcvrack)
-- [Facebook user group](https://www.facebook.com/groups/vcvrack/)
 - [Instagram](https://www.instagram.com/vcvrack/)
 - [Twitch](https://twitch.com/vcvrack)
 - [YouTube](https://www.youtube.com/c/VCVRack)
@@ -16,6 +15,7 @@
 ## Unofficial communities
 
 - [Discord](https://discord.gg/wxa89Mh)
+- [Facebook user group](https://www.facebook.com/groups/vcvrack/)
 - [Reddit](https://www.reddit.com/r/vcvrack/)
 - [Facebook developer group](https://www.facebook.com/groups/2035785263299933/) (closed, moved to [VCV Community - Development board](https://community.vcvrack.com/c/development/8))
 - [Patchstorage](https://patchstorage.com/platform/vcv-rack/)
