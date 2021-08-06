@@ -1,5 +1,5 @@
 
-# Communities
+# Official Communities
 
 - [Website](https://vcvrack.com/)
 - [Forum](https://community.vcvrack.com/)
@@ -12,7 +12,7 @@
 - [Bandcamp (Switched On Rack label)](https://switchedonrack.bandcamp.com/)
 - [SoundCloud](https://soundcloud.com/vcvrack)
 
-## Unofficial communities
+## Third-party communities
 
 - [Discord](https://discord.gg/wxa89Mh)
 - [Facebook user group](https://www.facebook.com/groups/vcvrack/)
