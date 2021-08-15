@@ -1,6 +1,6 @@
 # Plugin Licensing
 
-VCV Rack is free/open-source software, but you should still familiarize yourself with the [VCV Rack licenses](https://github.com/VCVRack/Rack/blob/v1/LICENSE.md) before releasing your plugin, to avoid misuse of intellectual property. If in doubt, send your licensing questions to [contact@vcvrack.com](mailto:contact@vcvrack.com).
+VCV Rack is free/open-source software, but you should still familiarize yourself with the [VCV Rack licenses](https://github.com/VCVRack/Rack/blob/v1/LICENSE.md) before releasing your plugin, to avoid misuse of intellectual property. If in doubt, send your licensing questions to [support@vcvrack.com](mailto:support@vcvrack.com).
 
 ## I want to release my plugin under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) (GPLv3) free/open-source license.
 
@@ -26,7 +26,7 @@ If someone makes a fork of your non-GPLv3 open-source plugin that is not a Rack 
 
 ## I want to sell my plugin commercially under non-GPLv3 terms.
 
-VCV offers commercial royalty licensing for Rack plugins by emailing [contact@vcvrack.com](mailto:contact@vcvrack.com).
+VCV offers commercial royalty licensing for Rack plugins by emailing [support@vcvrack.com](mailto:support@vcvrack.com).
 This license also includes permission to use the [Component Library](https://github.com/VCVRack/Rack/blob/v1/include/componentlibrary.hpp) graphics by [Grayscale](https://grayscale.info/), which are normally licensed for non-commercial use only.
 
 It is recommended to contact VCV as early as possible in your development process to make sure the license agreement is ready well before you release your plugin.

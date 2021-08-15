@@ -37,7 +37,7 @@ Version [1.0.0]:
 License (if open-source, use license identifier from https://spdx.org/licenses/) [proprietary]: CC0-1.0
 Brand (prefix for all module names) [My Plugin]:
 Author []: VCV
-Author email (optional) []: contact@vcvrack.com
+Author email (optional) []: support@vcvrack.com
 Author website URL (optional) []: https://vcvrack.com/
 Plugin website URL (optional) []:
 Manual website URL (optional) []:

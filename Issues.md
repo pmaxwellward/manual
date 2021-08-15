@@ -1,6 +1,6 @@
 # Bugs and Features
 
-VCV offers technical support of commercial VCV plugins by emailing <contact@vcvrack.com>.
+VCV offers technical support of commercial VCV plugins by emailing <support@vcvrack.com>.
 
 For technical support of VCV Rack, open-source VCV plugins, and third-party plugins, refer to the correct category below.
 

@@ -36,7 +36,7 @@ This means there is only one type of cable in *Rack*: polyphonic.
 Zero-channel cables are also possible, which make modules think the cable is unpatched.
 This can be useful if a module has a particular unpatched behavior you want to use but don't want to actually unpatch the cable.
 It is even possible for a hypothetical module to automate the number of channels of its outputs, in order to virtually patch/unpatch a cable according to a gate signal.
-(Email contact@vcvrack.com if you know or made a module that does this.)
+(Email support@vcvrack.com if you know or made a module that does this.)
 
 Modules that support polyphony almost always have better performance than using multiple copies of monophonic modules, often as high as 4x (25% the CPU).
 This is because polyphonic modules are usually written with [SIMD instructions](https://en.wikipedia.org/wiki/SIMD), and/or take advantage of compiler auto-vectorization, which allows your CPU to process 4 channels (with [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)) simultaneously on the same core.

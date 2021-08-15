@@ -82,7 +82,7 @@ Due to [simultaneous multithreading](https://en.wikipedia.org/wiki/Simultaneous_
 
 ### Login
 Logs into your VCV account registered at [vcvrack.com](https://vcvrack.com/).
-Email <contact@vcvrack.com> for account assistance.
+Email <support@vcvrack.com> for account assistance.
 
 ### Update all
 Updates and downloads all new plugins and plugin versions added to your VCV account.
