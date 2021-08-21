@@ -23,6 +23,5 @@
 
 ### Appendix
 - [FAQ](/FAQ)
-- [Bugs and Features](/Issues)
 - [Communities](/Communities)
 - [About VCV](/About)

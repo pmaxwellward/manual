@@ -28,7 +28,7 @@ make clean
 make dist
 ```
 
-If your plugin compiles successfully, you can skip ahead to [Potential runtime bugs](#Potential-runtime-bugs).
+If your plugin compiles successfully, you can skip ahead to [Potential runtime bugs](#2-Potential-runtime-bugs).
 If not, read on to solve potential errors or warnings.
 
 

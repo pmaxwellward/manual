@@ -43,8 +43,6 @@ pacman -S git wget gcc gdb make cmake tar unzip zip curl jq python
 
 *You do not need to build Rack to build plugins if you use the Rack SDK.*
 
-*If the build fails for you, please [report the issue](Issues) to help the portability of Rack.*
-
 Clone this repository with `git clone https://github.com/VCVRack/Rack.git` and `cd Rack`.
 Make sure there are no spaces in your absolute path, since this breaks the Makefile-based build system.
 
