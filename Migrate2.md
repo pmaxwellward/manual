@@ -1,5 +1,7 @@
 # Migrating v1 Plugins to v2
-The API of VCV Rack 2 has been designed to be nearly backward-compatible with v1 plugins, so updating your plugin to v2 likely only involves a version update and a recompile.
+The API of VCV Rack 2 has been designed to be nearly backward-compatible with v1 plugins.
+This means that 90% of plugins will only require a version update and a recompile (a 1-line edit, 15 seconds of work).
+For the other 10% of plugins using advanced or unstable API feature, updating to v2 is easy and involves following a few search-and-replace steps.
 
 
 ### 1.1) Update `plugin.json` version string to v2
@@ -32,7 +34,14 @@ If your plugin compiles successfully, you can skip ahead to [Potential runtime b
 If not, read on to solve potential errors or warnings.
 
 
-### 1.2) `ParamWidget::reset()` and `ParamWidget::randomize()` has been removed
+### 1.2) `ParamWidget::paramQuantity` has been replaced by `getParamQuantity()`
+If your `ParamWidget` methods use the `paramQuantity` member variable, replace it with the getter method, or add this line to the top of your method.
+```cpp
+ParamQuantity* paramQuantity = getParamQuantity();
+```
+
+
+### 1.3) `ParamWidget::reset()` and `ParamWidget::randomize()` has been removed
 If you would like to disable resetting or randomization of a particular parameter when the user resets/randomizes the module, set these properties in your `Module` constructor.
 ```cpp
 getParamQuantity(MY_PARAM)->resetEnabled = false;
@@ -56,13 +65,6 @@ void onRandomize(const RandomizeEvent& e) override {
 	// Call super method if you wish to include default behavior
 	// Module::onRandomize(e);
 }
-```
-
-
-### 1.3) `ParamWidget::paramQuantity` has been replaced by `getParamQuantity()`
-If your `ParamWidget` methods use the `paramQuantity` member variable, replace it with the getter method, or add this line to the top of your method.
-```cpp
-ParamQuantity* paramQuantity = getParamQuantity();
 ```
 
 
