@@ -1,7 +1,10 @@
 # Migrating v1 Plugins to v2
 The API of VCV Rack 2 has been designed to be nearly backward-compatible with v1 plugins.
 This means that 90% of plugins will only require a version update and a recompile (a 1-line edit, 15 seconds of work).
-For the other 10% of plugins using advanced or unstable API feature, updating to v2 is easy and involves following a few search-and-replace steps.
+
+For the other 10% of plugins using advanced or unstable API features, updating to v2 is easy and involves following a few search-and-replace steps.
+
+Additionally, Rack 2 includes several new optional enhancements that plugin developers can use to improve usability of their plugins in [section 3](#3-New-optional-v2-API-features).
 
 
 ### 1.1) Update `plugin.json` version string to v2
