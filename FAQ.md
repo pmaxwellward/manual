@@ -34,14 +34,14 @@ VCV also plans to offer individual commercial modules for sale, as well as disco
 <a id="daws"></a>
 ## Is VCV Rack available as a VST/AU/AAX plugin for DAWs?
 
-VCV Rack can be fully considered a DAW itself rather than a "synthesizer plugin", so Rack is a standalone application.
-However, due to overwhelming user demand, a new product called *VCV Rack for DAWs* will be available as a 64-bit VST2 plugin for around $99 shortly after Rack v2 is released.
-VST3/AU/AAX/LV2 versions might be released afterwards, but this is not yet confirmed.
-All Rack v2 plugins will be compatible with the plugin version of Rack.
-The standalone version of Rack v2 will continue to be free/open-source.
+VCV Rack 2 will be released in two editions:
 
-Follow the [Rack development blog](https://community.vcvrack.com/t/rack-development-blog/5864) for the most up-to-date Rack development news.
+- Studio Edition ($149 regular price, $99 during launch sale): Standalone, VST2
+- Community Edition (GPLv3, open-source, free): Standalone
 
+Other plugin formats will be available in a later Rack 2.x version.
+
+Watch the [VCV Rack 2 Teaser](https://youtu.be/Uk1yg9ib_oI) video.
 
 <a id="performance"></a>
 ## How do I improve performance of VCV Rack?
