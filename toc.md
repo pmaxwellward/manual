@@ -12,6 +12,7 @@
 - [Plugin Development Tutorial](/PluginDevelopmentTutorial)
 - [Panel Guide](/Panel)
 - [Plugin Manifest](/Manifest)
+- [Module Presets](/Presets)
 - [Voltage Standards](/VoltageStandards)
 - [Digital Signal Processing](/DSP)
 - [Migrating v0.6 Plugins to v1](/Migrate1)
