@@ -79,6 +79,8 @@ Search and replace:
 perl -p -i -e 's/APP->window->loadSvg\b/Svg::load/g' src/*.{cpp,hpp}
 ```
 
+If your plugin still has build errors, open a thread in the [VCV development forum](https://community.vcvrack.com/c/development/8) or contact [VCV support](https://vcvrack.com/support) to describe your build error.
+
 
 ## 2) Potential runtime bugs
 You might encounter these issues while testing.
@@ -105,8 +107,7 @@ void draw(const DrawArgs& args) override {
 ## 3) New optional v2 API features
 While not required, these new API features in Rack 2 can enhance the usability of your modules.
 
-
-### 3.2) Add Port and Light labels
+### 3.1) Add Port and Light labels
 Add names to your ports and lights which appear in tooltips.
 
 For example, in your `Module` constructor:
@@ -117,7 +118,7 @@ configLight(PHASE_LIGHT, "Phase");
 ```
 
 
-### 3.3) Replace `configParam()` with `configButton()` or `configSwitch()` as applicable
+### 3.2) Replace `configParam()` with `configButton()` or `configSwitch()` as applicable
 For momentary buttons and multi-state switches, displaying a real-valued parameter to the user doesn't make much sense.
 
 Instead, use `configButton()` to hide the text field in its context menu, or `configSwitch()` to offer a list of choices.
@@ -127,7 +128,7 @@ configSwitch(SYNC_PARAM, "Sync mode", {"Soft", "Hard"});
 ```
 
 
-### 3.4) Add bypass routes
+### 3.3) Add bypass routes
 If your module is bypassed by the user (via the context menu or key command), you can route certain inputs directly to outputs, bypassing all processing.
 This would make sense for a filter or reverb, or even a clock divider or quantizer, but it would not make sense for a VCO, since it generates a signal rather than processes one.
 
@@ -140,7 +141,7 @@ configBypass(RIGHT_INPUT, RIGHT_OUTPUT);
 Alternatively, override `Module::processBypass()` to implement custom bypass behavior.
 
 
-### 3.5) Store large data in the module's patch storage directory
+### 3.4) Store large data in the module's patch storage directory
 Instead of serializing large (>100 KB) buffers in `toJson/fromJson()` methods which could lag the UI, read/write to the directory returned by `createPatchStorageDirectory()` and `getPatchStorageDirectory()`.
 
 Example:
@@ -156,3 +157,18 @@ void onSave(const SaveEvent& e) override {
 }
 ```
 Note: You cannot call these methods in the `Module` constructor since it is not added to the Engine at that point.
+
+
+### 3.5) Draw custom light-like widgets at full brightness
+
+![](images/dark-scope.png)
+
+Rack 2 allows users to decrease the brightness of the rack, leaving lights at full brightness.
+
+If your custom widget should emit light, set the global tint to white in its `draw()` method.
+```cpp
+void draw(const DrawArgs& args) override {
+	nvgGlobalTint(args.vg, color::WHITE);
+	...
+}
+```
