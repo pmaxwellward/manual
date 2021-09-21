@@ -161,7 +161,7 @@ Note: You cannot call these methods in the `Module` constructor since it is not 
 
 ### 3.5) Draw custom light-like widgets at full brightness
 
-![](images/dark-scope.png)
+<img src="images/dark-scope.png" class="float-right">
 
 Rack 2 allows users to decrease the brightness of the rack, leaving lights at full brightness.
 
