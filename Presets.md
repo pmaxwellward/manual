@@ -1,6 +1,6 @@
 # Module Presets
 
-![](images/presets.png)
+<img src="images/presets.png" class="float-right">
 
 Factory module presets are a great tool for teaching and inspiring users of your Rack plugin.
 They store parameter values, as well as internal data from your `Module::dataToJson()` method if overridden.
@@ -12,7 +12,7 @@ To include a factory module preset in your module, save a module preset file (`.
 
 Module presets are sorted alphabetically by filename.
 However, (since Rack 2) if a filename begins with numerical digits followed by `_` (regex `/^\d+_/`), that prefix is not displayed to the user, so you can apply your own custom preset sorting order.
-For example, the above screenshot uses the following preset filenames.
+For example, the presets from [VCV Drum Machine](https://library.vcvrack.com/VCV-Drums/DrumMachine) (pictured) use the following filenames.
 ```txt
 /presets/DrumMachine/00_House.vcvm
 /presets/DrumMachine/01_House 2.vcvm
