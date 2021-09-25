@@ -73,12 +73,6 @@ void onRandomize(const RandomizeEvent& e) override {
 ```
 
 
-### 1.4) `Window::loadSvg()` has been deprecated and moved to `Svg::load()`
-Search and replace:
-```bash
-perl -p -i -e 's/APP->window->loadSvg\b/Svg::load/g' src/*.{cpp,hpp}
-```
-
 If your plugin still has build errors, open a thread in the [VCV development forum](https://community.vcvrack.com/c/development/8) or contact [VCV support](https://vcvrack.com/support) to describe your build error.
 
 

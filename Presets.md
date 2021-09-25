@@ -4,11 +4,13 @@
 
 Factory module presets are a great tool for teaching and inspiring users of your Rack plugin.
 They store parameter values, as well as internal data from your `Module::dataToJson()` method if overridden.
+Since presets are simply JSON files, they cannot store module patch storage files (introduced in Rack 2).
 
 To include a factory module preset in your module, save a module preset file (`.vcvm`) to
 ```txt
 <your plugin's root dir>/presets/<module slug>/<preset name>.vcvm
 ```
+Rack reloads presets when the user opens the preset context menu, so you do not need to restart Rack.
 
 Module presets are sorted alphabetically by filename.
 However, (since Rack 2) if a filename begins with numerical digits followed by `_` (regex `/^\d+_/`), that prefix is not displayed to the user, so you can apply your own custom preset sorting order.
@@ -36,5 +38,3 @@ For example, to change parameters #0 and #2 but leave #1 unchanged, remove the `
     }
   ]
 ```
-
-Module presets cannot store module patch storage files (introduced in Rack 2).
