@@ -17,14 +17,14 @@ pacman -Syu
 ```
 Then restart the shell and install packages.
 ```bash
-pacman -Su git wget make tar unzip zip mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb mingw-w64-x86_64-cmake autoconf automake mingw-w64-x86_64-libtool mingw-w64-x86_64-jq python
+pacman -Su git wget make tar unzip zip mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb mingw-w64-x86_64-cmake autoconf automake mingw-w64-x86_64-libtool mingw-w64-x86_64-jq python zstd
 ```
 
 ### Mac
 
 Install [Homebrew](https://brew.sh/), and install build dependencies.
 ```bash
-brew install git wget cmake autoconf automake libtool jq python
+brew install git wget cmake autoconf automake libtool jq python zstd
 ```
 
 ### Linux
