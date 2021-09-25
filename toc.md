@@ -15,7 +15,7 @@
 - [Module Presets](/Presets)
 - [Voltage Standards](/VoltageStandards)
 - [Digital Signal Processing](/DSP)
-- [Migrating v0.6 Plugins to v1](/Migrate1)
+- [Migrating v1 Plugins to v2](/Migrate2)
 - [Plugin Licensing](/PluginLicensing)
 
 ### Rack Development
