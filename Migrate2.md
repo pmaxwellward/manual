@@ -118,7 +118,7 @@ For momentary buttons and multi-state switches, displaying a real-valued paramet
 Instead, use `configButton()` to hide the text field in its context menu, or `configSwitch()` to offer a list of choices.
 ```cpp
 configButton(TAP_PARAM);
-configSwitch(SYNC_PARAM, "Sync mode", {"Soft", "Hard"});
+configSwitch(SYNC_PARAM, 0, 1, 0, "Sync mode", {"Soft", "Hard"});
 ```
 
 
