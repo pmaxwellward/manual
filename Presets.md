@@ -10,6 +10,10 @@ To include a factory module preset in your module, save a module preset file (`.
 ```txt
 <your plugin's root dir>/presets/<module slug>/<preset name>.vcvm
 ```
+and add the `presets` directory to your distributables.
+```makefile
+DISTRIBUTABLES += presets
+```
 Rack reloads presets when the user opens the preset context menu, so you do not need to restart Rack.
 
 Module presets are sorted alphabetically by filename.
