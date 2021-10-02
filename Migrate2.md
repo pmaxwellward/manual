@@ -30,7 +30,7 @@ If you wish, you may keep the minor and revision numbers unchanged, e.g. `2.2.3`
 Download the latest [Rack 2 SDK](https://vcvrack.com/downloads/).
 Clean and compile the plugin.
 ```bash
-export RACK_SDK=/path/to/Rack-SDK
+export RACK_DIR=/path/to/Rack-SDK
 make clean
 make dist
 ```
