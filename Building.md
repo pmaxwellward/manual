@@ -31,7 +31,7 @@ brew install git wget cmake autoconf automake libtool jq python zstd
 
 On Ubuntu 16.04+:
 ```bash
-sudo apt install unzip git gdb curl cmake libx11-dev libglu1-mesa-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev zlib1g-dev libasound2-dev libgtk2.0-dev libgtk3.0-dev libjack-jackd2-dev jq zstd
+sudo apt install unzip git gdb curl cmake libx11-dev libglu1-mesa-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev zlib1g-dev libasound2-dev libgtk2.0-dev libgtk-3-dev libjack-jackd2-dev jq zstd
 ```
 
 On Arch Linux:
