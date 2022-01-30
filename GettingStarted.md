@@ -25,7 +25,7 @@ Try changing the frequency of [*VCV VCO-1*](https://library.vcvrack.com/Fundamen
 All signals in VCV Rack are virtual voltages, but they can classified roughly into a few categories:
 
 - **Audio** signals are audible if played through your speakers. They contain *audio-rate* frequencies typically between 20Hz to 20kHz.
-- **CV** (control voltage) signals can modulate parameters of other modules. For example, an LFO (low-frequency oscillator) can oscillate the pitch of a VCO (voltage-controlled oscillator) or the volume level of a VCA (voltage-controlled oscillator).
+- **CV** (control voltage) signals can modulate parameters of other modules. For example, an LFO (low-frequency oscillator) can oscillate the pitch of a VCO (voltage-controlled oscillator) or the volume level of a VCA (voltage-controlled amplifier).
 - **1V/oct** (1 volt per octave) signals are CV signals that represent a pitch or note. In this standard, an increase of 1V increases the pitch by 1 octave. Since there are 12 semitones in an octave, an increase of 1/12 V increases the pitch by 1 semitone.
 - **Gate** signals carry an on/off signal. 0V represents off, and a positive voltage (typically 10V) represents on. For example, a gate signal can turn on when a key is pressed and off when the key is released.
 - **Trigger** signals are short gates (usually around 1 millisecond) that cause an event to occur, such as a percussion hit.
